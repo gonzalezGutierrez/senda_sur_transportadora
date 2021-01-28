@@ -1,0 +1,61 @@
+.bg-background:before{
+    background-color:rgba(0,0,0,0.3) !important;
+}
+.bg-background{
+    background-color:rgba(0,0,0,0.3) !important;
+}
+
+.bg-background-color:before {
+    background-color: rgba(0,0,0,0.6) !important;
+}
+
+.card {
+    border-radius:5px !important;
+}
+
+.dropzone {
+    min-height: 150px;
+    /* border: 2px solid rgba(0,0,0,0.3); */
+    background: white;
+    padding: 20px 20px;
+    border: 2px dashed #e5e4f0;
+    border-radius: 3px;
+}
+.dropzone .dz-preview .dz-image {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    display: block;
+    z-index: 10;
+}
+
+.dropzone .dz-preview {
+    margin: 5px;
+}
+.top-cities img {
+    margin: 0 auto;
+    padding: 0px !important;
+    border-radius: 0% !important;
+}
+
+.overflow-y {
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.block-xs {
+    display:none;
+}
+
+
+/*MEDIAS QUERIES*/
+@media (max-width:576px) {
+    .hidden-xs {
+        display:none !important;
+    }
+    .block-xs {
+        display:block !important;
+    }
+}
