@@ -19,13 +19,21 @@ class PagesController extends Controller
         //paquetes
         $toursCount     = Tour::getTourAvailable()->count();
         $populateTours  = Tour::with('places')->getTourAvailable()->getTake(6)->orderWith('start_date','ASC')->get();
+        
+        $bannerPlace    = Place::get()->random(1)->first()->banner;
+
+        $bannerTour     = Tour::get()->random(1)->first()->banner;
+
 
         return view('pages.home',compact(
             'placesCount',
             'populatePlaces',
 
             'toursCount',
-            'populateTours'
+            'populateTours',
+
+            'bannerPlace',
+            'bannerTour'
         ));
     }
 

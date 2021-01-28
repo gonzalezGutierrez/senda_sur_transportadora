@@ -61,7 +61,7 @@
         </a>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" alt="" src="../../assets/images/banners/banner3.jpg" data-holder-rendered="true">
+                <img class="d-block w-100" style="height:800px !important;" alt="" src="{{asset($bannerPlace)}}" data-holder-rendered="true">
                 <div class="header-text slide-header-text mb-0">
                     <div class="container">
                         <div class="text-center text-white mb-6">
@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" alt="" src="../../assets/images/banners/banner16.jpg" data-holder-rendered="true">
+                <img class="d-block w-100" style="height:800px !important;" alt="" src="{{asset($bannerTour)}}" data-holder-rendered="true">
 
                 <div class="header-text slide-header-text mb-0">
                     <div class="container">
